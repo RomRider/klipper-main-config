@@ -27,7 +27,7 @@
 RESULTS_FOLDER=~/klipper_config/adxl_results # Path to the folder where storing the results files
 SCRIPTS_FOLDER=~/klipper_config/klipper-main-config/scripts # Path to the folder where the graph_vibrations.py is located
 KLIPPER_FOLDER=~/klipper # Path of the klipper main folder
-STORE_RESULTS=3 # Number of results to keep (older files are automatically cleaned). 0 to keep them indefinitely
+STORE_RESULTS=10 # Number of results to keep (older files are automatically cleaned). 0 to keep them indefinitely
 #################################################################################################################
 
 

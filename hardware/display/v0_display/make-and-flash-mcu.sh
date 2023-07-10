@@ -14,9 +14,9 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 
-MCU=/dev/btt-octopus-pro-446
+MCU=/dev/v0-display
 VENDORDEVICEID=0483:df11
-cp -f /home/pi/klipper_config/klipper-main-config/hardware/boards/btt-octopus-pro-446/firmware.config /home/pi/klipper/.config
+cp -f /home/pi/klipper_config/klipper-main-config/hardware/display/v0_display/firmware.config /home/pi/klipper/.config
 pushd /home/pi/klipper
 make olddefconfig
 make clean
@@ -27,8 +27,8 @@ then
     mkdir /home/pi/klipper_config/firmware_binaries
     chown pi:pi /home/pi/klipper_config/firmware_binaries
 fi
-cp -f /home/pi/klipper/out/klipper.bin /home/pi/klipper_config/firmware_binaries/firmware-btt-octopus-pro-446.bin
-chown pi:pi /home/pi/klipper_config/firmware_binaries/firmware-btt-octopus-pro-446.bin
+cp -f /home/pi/klipper/out/klipper.bin /home/pi/klipper_config/firmware_binaries/firmware-v0-display.bin
+chown pi:pi /home/pi/klipper_config/firmware_binaries/firmware-v0-display.bin
 
 service klipper stop
 if [ -h $MCU ]; then

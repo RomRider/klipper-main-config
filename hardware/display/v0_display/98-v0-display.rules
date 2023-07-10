@@ -1,0 +1,4 @@
+# v0-display
+SUBSYSTEMS=="usb", ATTRS{idProduct}=="614e",  ATTRS{idVendor}=="1d50", ATTRS{serial}=="v0-display", ACTION=="add", SYMLINK+="v0-display", RUN+="/home/pi/klipper_config/klipper-main-config/scripts/klipper-mcu-added.sh"
+
+ACTION=="remove", ENV{DEVLINKS}=="/dev/v0-display"

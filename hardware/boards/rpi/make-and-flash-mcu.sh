@@ -8,7 +8,7 @@ fi
 pushd /home/pi/klipper
 service klipper stop
 echo "flashing rpi-mcu"
-cp -f /home/pi/klipper_config/klipper-main-config/boards/rpi/firmware.config /home/pi/klipper/.config
+cp -f /home/pi/klipper_config/klipper-main-config/hardware/boards/rpi/firmware.config /home/pi/klipper/.config
 make olddefconfig
 make clean
 make flash
